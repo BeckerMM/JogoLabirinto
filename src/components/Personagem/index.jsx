@@ -7,3 +7,5 @@ const Persongem = () => {
         </div>
     )
 }
+
+export default Persongem;

@@ -1,9 +1,8 @@
 import react from "react";
-
+import Persongem from "../Personagem";
 const Bloco = (props)=>{
     
     const verificar= () =>{
-        console.log(props.cor);
         if(props.cor == 1){
             return "bg-white"; 
         }else if (props.cor == 2){
@@ -15,8 +14,8 @@ const Bloco = (props)=>{
 
     
     return(
-        <div className={" h-full w-full "+ verificar()}>
-          
+        <div className={" h-full w-full flex justify-center items-center "+ verificar()}>
+          {props.personagem && <Persongem/>}
         </div>
     )
 }
